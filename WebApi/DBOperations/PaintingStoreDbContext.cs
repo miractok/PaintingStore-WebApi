@@ -14,6 +14,8 @@ namespace WebApi.DBOperations
         public DbSet<Medium> Mediums { get; set; }
         public DbSet<Genre> Genres { get; set; }
         public DbSet<ArtistPainting> ArtistPaintings { get; set; }
+        public DbSet<Customer> Customers { get; set; }
+        public DbSet<Order> Orders { get; set; }
 
         public override int SaveChanges()
         {

@@ -18,6 +18,11 @@ using WebApi.Application.StyleOperations.Queries.GetStyles;
 using WebApi.Application.MediumOperations.Queries.GetMediums;
 using WebApi.Application.MediumOperations.Queries.GetMediumDetails;
 using WebApi.Application.MediumOperations.Commands.CreateMedium;
+using WebApi.Application.CustomerOperations.Commands.CreateCustomer;
+using WebApi.Application.OrderOperations.Queries.GetOrder;
+using WebApi.Application.OrderOperations.Queries.GetOrderDetails;
+using WebApi.Application.OrderOperations.Commands.CreateOrder;
+using WebApi.Application.CustomerOperations.Queries.GetCustomerDetails;
 
 namespace WebApi.Common
 {
@@ -94,6 +99,30 @@ namespace WebApi.Common
 
             //Medium Operations Commands Create Medium
             CreateMap<CreateMediumViewModel, Medium>();
+
+            //Customer Operations Queries Get Details
+            CreateMap<Customer, CustomerViewIdModel>()
+                .ForMember(dest => dest.Orders, opt => opt.MapFrom(m => m.Orders.Select(s => s.Painting.Name)));
+
+            //Customer Operations Commands Create
+            CreateMap<CreateCustomerModel, Customer>();
+
+            //Order Operations Queries Get
+            CreateMap<Order, OrderViewModel>()
+                .ForMember(dest => dest.NameSurname, opt => opt.MapFrom(src => src.Customer.NameSurname))
+                .ForMember(dest => dest.Painting, opt => opt.MapFrom(src => src.Painting.Name))
+                .ForMember(dest => dest.Price, opt => opt.MapFrom(src => src.Painting.Price))
+                .ForMember(dest => dest.PurchaseDate, opt => opt.MapFrom(src => src.PurchaseDate));
+
+            //Order Operations Queries Get Details
+            CreateMap<Order, OrderViewIdModel>()
+                .ForMember(dest => dest.NameSurname, opt => opt.MapFrom(src => src.Customer.NameSurname))
+                .ForMember(dest => dest.Painting, opt => opt.MapFrom(src => src.Painting.Name))
+                .ForMember(dest => dest.Price, opt => opt.MapFrom(src => src.Painting.Price))
+                .ForMember(dest => dest.PurchaseDate, opt => opt.MapFrom(src => src.PurchaseDate));
+
+            //Order Operations Commands Create 
+            CreateMap<CreateOrderViewModel, Order>();
         }
     }
 }

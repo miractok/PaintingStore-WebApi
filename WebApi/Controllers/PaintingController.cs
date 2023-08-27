@@ -10,6 +10,7 @@ using WebApi.DBOperations;
 
 namespace WebApi.Controller;
 
+//[Authorize]
 [ApiController]
 [Route("[Controller]s")]
 public class PaintingController : ControllerBase

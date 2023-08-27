@@ -131,6 +131,20 @@ namespace WebApi.DBOperations
                     }
                 );
 
+                context.Customers.AddRange(
+                    new Customer
+                    {
+                        NameSurname = "User", Email = "User@gmail.com", Password = "123465"
+                    }
+                );
+
+                context.Orders.AddRange(
+                    new Order
+                    {
+                        CustomerId = 1, PaintingId = 1
+                    }
+                );
+
                 context.SaveChanges();
             }
         }
