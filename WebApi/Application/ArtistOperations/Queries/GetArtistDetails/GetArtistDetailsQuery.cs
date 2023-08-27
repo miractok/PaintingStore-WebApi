@@ -20,7 +20,7 @@ namespace WebApi.Application.ArtistOperations.Queries.GetArtistDetails
             var Artist = _context.Artists.Include(x=> x.ArtistPainting).ThenInclude(x=> x.Painting).Where(Artist=> Artist.Id == ArtistId).SingleOrDefault();
 
             if(Artist == null)
-                throw new InvalidOperationException("The Id you entered does not match any Artist.");
+                throw new InvalidOperationException("The Id you entered does not match any artist.");
 
             ArtistViewIdModel vm = _mapper.Map<ArtistViewIdModel>(Artist); 
             

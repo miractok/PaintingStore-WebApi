@@ -18,6 +18,7 @@ namespace WebApi.DBOperations
                     new Painting
                     {
                         Name = "Travel of Poseidon by Sea",
+                        PublishDate = new DateTime(1894,1,2),
                         ArtistId = 1,
                         GenreId = 1,
                         StyleId = 1,
@@ -28,6 +29,7 @@ namespace WebApi.DBOperations
                     new Painting
                     {
                         Name = "TestPainting",
+                        PublishDate = new DateTime(2015,2,3),
                         ArtistId = 2,
                         GenreId = 2,
                         StyleId = 2,
@@ -38,6 +40,7 @@ namespace WebApi.DBOperations
                     new Painting
                     {
                         Name = "TestPainting1",
+                        PublishDate = new DateTime(1984,5,9),
                         ArtistId = 3,
                         GenreId = 3,
                         StyleId = 3,

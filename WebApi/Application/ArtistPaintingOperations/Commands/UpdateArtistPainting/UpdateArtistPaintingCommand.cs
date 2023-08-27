@@ -19,16 +19,16 @@ namespace WebApi.Application.ArtistPaintingOperations.Commands.UpdateArtistPaint
             if(artistPainting == null)
                 throw new InvalidOperationException("Data could not be found!");
 
-            var artist = _context.Artists.SingleOrDefault(x => x.Id == Model.ActorId);
+            var artist = _context.Artists.SingleOrDefault(x => x.Id == Model.ArtistId);
             if(artist == null)
                 throw new InvalidOperationException("Artist could not be found!");
 
-            var painting = _context.Paintings.SingleOrDefault(x => x.Id == Model.FilmId);
+            var painting = _context.Paintings.SingleOrDefault(x => x.Id == Model.PaintingId);
             if(painting == null)
                 throw new InvalidOperationException("Painting could not be found!");
 
-            artistPainting.PaintingId = Model.FilmId != default ? Model.FilmId : artistPainting.PaintingId;
-            artistPainting.ArtistId = Model.ActorId != default ? Model.ActorId : artistPainting.ArtistId;
+            artistPainting.PaintingId = Model.PaintingId != default ? Model.PaintingId : artistPainting.PaintingId;
+            artistPainting.ArtistId = Model.ArtistId != default ? Model.ArtistId : artistPainting.ArtistId;
             artistPainting.IsActive = Model.IsActive;
 
             _context.ArtistPaintings.Update(artistPainting);
@@ -39,8 +39,8 @@ namespace WebApi.Application.ArtistPaintingOperations.Commands.UpdateArtistPaint
 
     public class UpdateArtistPaintingModel
     {
-        public int FilmId { get; set; }
-        public int ActorId { get; set; }
+        public int PaintingId { get; set; }
+        public int ArtistId { get; set; }
         public bool IsActive { get; set; }
     }
 }

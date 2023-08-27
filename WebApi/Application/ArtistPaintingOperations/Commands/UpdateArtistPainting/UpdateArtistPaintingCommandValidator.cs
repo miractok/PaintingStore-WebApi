@@ -6,8 +6,8 @@ namespace WebApi.Application.ArtistPaintingOperations.Commands.UpdateArtistPaint
     {
         public UpdateArtistPaintingCommandValidator()
         {
-            RuleFor(command => command.Model.FilmId).GreaterThan(0);
-            RuleFor(command => command.Model.ActorId).GreaterThan(0);
+            RuleFor(command => command.Model.PaintingId).GreaterThan(0);
+            RuleFor(command => command.Model.ArtistId).GreaterThan(0);
         }
     }
 }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "nqb5TrcwjvSX3AchAacrOiNCnKNDBSThvG0wy5/6OLqkY9V1FuaIEFGJTexgCp6SIXynRHkCjl6PJmrRLatgRA==",
+  "dgSpecHash": "nPrhDYYDEQLUlgwfKuiW3ZoX2Vrm0FERK1e7FK5/Wy/W1tu6s4CxTcGH7NW+0+BQ+YnegL4q06sPMzxAYuR9yw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Mirac\\Documents\\PaintingStore-WebApi\\WebApi\\WebApi.csproj",
+  "projectFilePath": "c:\\Users\\Mirac\\Documents\\PaintingStore-WebApi\\WebApi\\WebApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Mirac\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\Mirac\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",

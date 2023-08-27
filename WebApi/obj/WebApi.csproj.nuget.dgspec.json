@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Mirac\\Documents\\PaintingStore-WebApi\\WebApi\\WebApi.csproj": {}
+    "c:\\Users\\Mirac\\Documents\\PaintingStore-WebApi\\WebApi\\WebApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Mirac\\Documents\\PaintingStore-WebApi\\WebApi\\WebApi.csproj": {
+    "c:\\Users\\Mirac\\Documents\\PaintingStore-WebApi\\WebApi\\WebApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Mirac\\Documents\\PaintingStore-WebApi\\WebApi\\WebApi.csproj",
+        "projectUniqueName": "c:\\Users\\Mirac\\Documents\\PaintingStore-WebApi\\WebApi\\WebApi.csproj",
         "projectName": "WebApi",
-        "projectPath": "C:\\Users\\Mirac\\Documents\\PaintingStore-WebApi\\WebApi\\WebApi.csproj",
+        "projectPath": "c:\\Users\\Mirac\\Documents\\PaintingStore-WebApi\\WebApi\\WebApi.csproj",
         "packagesPath": "C:\\Users\\Mirac\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Mirac\\Documents\\PaintingStore-WebApi\\WebApi\\obj\\",
+        "outputPath": "c:\\Users\\Mirac\\Documents\\PaintingStore-WebApi\\WebApi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Mirac\\AppData\\Roaming\\NuGet\\NuGet.Config"
